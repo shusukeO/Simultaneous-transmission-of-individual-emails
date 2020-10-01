@@ -20,7 +20,7 @@ function myFunction() {
     MailApp.sendEmail(
       address,
       '英語IIB The Japan Times Liteプランの利用案内',
-      template_html.name  + 'さん\n\nSAの沖原です。\nこちらはThe Japan Times Liteプランの利用案内です。\n\n利用の際のあなたの登録メールアドレスは' + template_html.login_mail + '、パスワードは' + template_html.login_pass + 'です。\n\nhttps://www.japantimes.co.jp/にアクセスして、ログインしてください。\n\n本件に関して質問等ありましたら、ご返信ください。\n沖原\n\n※HTMLがうまく表示できていないようです。メーラーを変更すると解決できます。',
+      template_html.name  + 'さん\n\n名前です。\n\nあなたの登録メールアドレスは' + template_html.login_mail + '、パスワードは' + template_html.login_pass + 'です。\n\\n名前\n\n※HTMLがうまく表示できていないようです。メーラーを変更すると解決できます。',
       {htmlBody: html}
     );
   }    
