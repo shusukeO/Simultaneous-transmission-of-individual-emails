@@ -19,7 +19,7 @@ function myFunction() {
     // メール送信
     MailApp.sendEmail(
       address,
-      '英語IIB The Japan Times Liteプランの利用案内',
+      'タイトル',
       template_html.name  + 'さん\n\n名前です。\n\nあなたの登録メールアドレスは' + template_html.login_mail + '、パスワードは' + template_html.login_pass + 'です。\n\\n名前\n\n※HTMLがうまく表示できていないようです。メーラーを変更すると解決できます。',
       {htmlBody: html}
     );
